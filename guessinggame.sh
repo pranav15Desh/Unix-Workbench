@@ -3,7 +3,7 @@
 function guess {
 echo "Enter number of files in directory"
 read number
-fileno=$(ls -1 | wc -l)
+correctNumberOfFiles=$(($(ls -l | wc -l)-1))
 }
 
 guess
